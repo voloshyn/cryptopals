@@ -1,0 +1,32 @@
+{
+  "configurations": {
+    "crypto_lib_tests": {
+      "adapter": "CodeLLDB",
+      "default": false,
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/target/debug/deps/crypto_lib-18f7a0a5f4029af5",
+        "args": ["test"],
+        "cwd": "${workspaceRoot}",
+        "stoponentry": false,
+        "env": {
+          "rust_backtrace": "1"
+        }
+      }
+    },
+    "challenge": {
+      "adapter": "CodeLLDB",
+      "default": true,
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/target/debug/challenge_6",
+        "args": ["challenge_6/6.txt"],
+        "cwd": "${workspaceRoot}",
+        "stoponentry": false,
+        "env": {
+          "rust_backtrace": "1"
+        }
+      }
+    }
+  }
+}
